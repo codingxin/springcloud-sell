@@ -5,10 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/codingZhangxin/springcloud-sell
+          uri: https://github.com/codingZhangxin/config-repo
           username: codingzhangxin
           password: zx19961215
-          basedir: D:\github\config\basedir
+          force-pull: true
+          basedir: D:\github\config-repo
 eureka:
   client:
     service-url:
