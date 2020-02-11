@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../eureka/eureka.iml" filepath="$PROJECT_DIR$/../eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../order/order.iml" filepath="$PROJECT_DIR$/../order/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../order/client/order-client.iml" filepath="$PROJECT_DIR$/../order/client/order-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../order/common/order-common.iml" filepath="$PROJECT_DIR$/../order/common/order-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../order/server/order-server.iml" filepath="$PROJECT_DIR$/../order/server/order-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product.iml" filepath="$PROJECT_DIR$/product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/product-client.iml" filepath="$PROJECT_DIR$/client/product-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/product-common.iml" filepath="$PROJECT_DIR$/common/product-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/product-server.iml" filepath="$PROJECT_DIR$/server/product-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product-server" />
+        <module name="order-common" />
+        <module name="product-client" />
+        <module name="eureka" />
+        <module name="product-common" />
+        <module name="order-server" />
+        <module name="order-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="order-client" target="1.8" />
+      <module name="order-common" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="product" target="1.8" />
+      <module name="product-client" target="1.8" />
+      <module name="product-common" target="1.8" />
+      <module name="product-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="order-client" options="-parameters" />
+      <module name="order-common" options="-parameters" />
+      <module name="order-server" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="product-client" options="-parameters" />
+      <module name="product-common" options="-parameters" />
+      <module name="product-server" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="069c1d4e-f62f-4c9d-afca-7b39f8255094" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/OrderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/VO/ResultVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/client/ProductClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/controller/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/controller/Ordercontroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/converter/OrderFormTOorderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/dto/CartDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/dto/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/entity/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/entity/OrderMaster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/entity/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/enums/OrderStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/enums/PayStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/enums/ResultEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/exception/OrderException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/form/OrderForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/repository/OrderDetailRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/repository/OrderMasterRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/service/impl/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/utils/KeyUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/zhang/order/utils/ResultVOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/java/com/zhang/order/OrderApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/java/com/zhang/order/repository/OrderDetailRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/test/java/com/zhang/order/repository/OrderMasterRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/ProductApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/VO/ProductInfoVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/VO/ProductVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/VO/ResultVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/controller/ServerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/dto/CartDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/entity/ProductCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/entity/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/enums/ProductStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/enums/ResultEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/excepticon/ProductException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/repository/ProductCategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/repository/ProductInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/service/ProductCategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/service/impl/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/zhang/product/utils/ResultVOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test/java/com/zhang/product/ProductApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test/java/com/zhang/product/repository/ProductCategoryRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test/java/com/zhang/product/repository/ProductInfoRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test/java/com/zhang/product/service/ProductCategoryServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/test/java/com/zhang/product/service/ProductServiceTest.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\codingRepository\mavenRepository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../codingInstall/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\codingInstall\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1385" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="069c1d4e-f62f-4c9d-afca-7b39f8255094" name="Default Changelist" comment="" />
+      <created>1581300564289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581300564289</updated>
+      <workItem from="1581300565794" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="aiXcoder" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
