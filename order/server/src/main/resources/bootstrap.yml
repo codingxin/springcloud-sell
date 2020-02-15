@@ -7,6 +7,13 @@ spring:
         enabled: true
         service-id:  CONFIG
       profile: dev
+  rabbitmq:
+    host: 119.28.63.204
+    port: 5672
+    username: admin
+    password: password
+
+
 
 
 

@@ -10,7 +10,17 @@ spring:
           password: zx19961215
           force-pull: true
           basedir: D:\github\config-repo
+  rabbitmq:
+      host: 119.28.63.204
+      port: 5672
+      username: admin
+      password: password
 eureka:
   client:
     service-url:
        defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
