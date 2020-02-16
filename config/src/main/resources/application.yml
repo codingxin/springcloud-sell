@@ -9,7 +9,7 @@ spring:
           username: codingzhangxin
           password: zx19961215
           force-pull: true
-          basedir: D:\github\config-repo
+          basedir: D:\start\config-repo
   rabbitmq:
       host: 119.28.63.204
       port: 5672
