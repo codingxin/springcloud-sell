@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-public class message {
+public class MqReceiver {
 
     // 1. 手动添加队列 @RabbitListener(queues = "myQueue")
     // 2.自动创建队列 @RabbitListener(queuesToDeclare = @Queue("myQueue"))

@@ -1,10 +1,8 @@
 package com.zhang.order.service.impl;
 
-import com.zhang.order.dto.CartDTO;
 import com.zhang.order.dto.OrderDTO;
 import com.zhang.order.entity.OrderDetail;
 import com.zhang.order.entity.OrderMaster;
-import com.zhang.order.entity.ProductInfo;
 import com.zhang.order.enums.OrderStatusEnum;
 import com.zhang.order.enums.PayStatusEnum;
 import com.zhang.order.repository.OrderDetailRepository;
@@ -17,6 +15,7 @@ import com.zhang.product.common.ProductInfoOutput;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -63,7 +62,17 @@ public class OrderServiceImpl implements OrderService {
     private ProductClient productClient;
 
     @Override
+    @Transactional
     public OrderDTO create(OrderDTO orderDTO) {
+
+        //读redis（加分布式锁防止并发错误）
+        //减库存并重新将新值重新设置进redis（加分布式锁防止并发错误）
+        //订单入库异常，需要手动回滚Redis
+
+        //库存在Redis保存
+        //收到请求Redis判断是否库存充足，减掉Redis库存
+        //订单服务创建订单写入数据库，并发送消息
+
         String orderId = KeyUtil.getUniqueKey();
         // 1. 查询商品信息
         //lam表达式 获取 orderDto.orderList里面所有的id，并返回List

@@ -2,6 +2,7 @@ package com.zhang.product.controller;
 
 import com.zhang.product.VO.ProductInfoVO;
 import com.zhang.product.VO.ResultVO;
+import com.zhang.product.common.DecreaseStockInput;
 import com.zhang.product.entity.ProductCategory;
 import com.zhang.product.utils.ResultVOUtil;
 import com.zhang.product.VO.ProductVO;
@@ -83,7 +84,7 @@ public class ProductController {
     }
 
     @PostMapping("/decreaseStock")
-    public void decreaseStock(@RequestBody List<CartDTO> cartDTOList) {
+    public void decreaseStock(@RequestBody List<DecreaseStockInput> cartDTOList) {
         productService.decreaseStock(cartDTOList);
     }
 

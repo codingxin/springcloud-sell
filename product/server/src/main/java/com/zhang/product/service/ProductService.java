@@ -1,7 +1,9 @@
 package com.zhang.product.service;
 
+import com.zhang.product.common.DecreaseStockInput;
 import com.zhang.product.dto.CartDTO;
 import com.zhang.product.entity.ProductInfo;
+import javassist.runtime.Desc;
 
 import java.util.List;
 
@@ -26,7 +28,7 @@ public interface ProductService {
 
     /**
      * 扣除库存
-     * @param cartDTOList
+     * @param decreaseStockInputList
      */
-    void decreaseStock(List<CartDTO> cartDTOList);
+    void decreaseStock(List<DecreaseStockInput> decreaseStockInputList);
 }

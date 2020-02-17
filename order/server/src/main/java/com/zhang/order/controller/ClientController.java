@@ -1,7 +1,5 @@
 package com.zhang.order.controller;
 
-import com.zhang.order.dto.CartDTO;
-import com.zhang.order.entity.ProductInfo;
 import com.zhang.product.client.ProductClient;
 import com.zhang.product.common.DecreaseStockInput;
 import com.zhang.product.common.ProductInfoOutput;
