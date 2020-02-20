@@ -82,7 +82,10 @@ public class OrderServiceImpl implements OrderService {
         //lam表达式 获取 orderDto.orderList里面所有的id，并返回List
         List<String> productIdList = orderDTO.getOrderDetailList().stream()
                 .map(OrderDetail::getProductId).collect(Collectors.toList());
+
+        //计时 调用他人代码
         List<ProductInfoOutput> productInfoList = productClient.listForOrder(productIdList);
+
         //  * 2.  计算总价
         BigDecimal orderAmout = new BigDecimal(BigInteger.ZERO);
         for (OrderDetail orderDetail : orderDTO.getOrderDetailList()) {

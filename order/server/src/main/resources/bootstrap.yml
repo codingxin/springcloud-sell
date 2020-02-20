@@ -12,6 +12,12 @@ spring:
         myMessage:
           group: order
           content-type: application/json
+  zipkin:
+    base-url: http://119.28.63.204:9411/
+  sleuth:
+    sampler:
+      percentage: 1
+
 management:
   endpoints:
     web:
@@ -31,5 +37,8 @@ hystrix:
                 isolation:
                   thread:
                     timeoutInMilliseconds: 1000
+  logging:
+    level:
+       org.springframework.cloud.netflix.feign: debug
 
 
