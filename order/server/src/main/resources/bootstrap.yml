@@ -12,10 +12,24 @@ spring:
         myMessage:
           group: order
           content-type: application/json
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
-
-
-
-
+hystrix:
+  command:
+      default:
+            execution:
+                 isolation:
+                        thread:
+                            timeoutInMilliseconds: 1000
+  #给方法单独设置超时时间
+      getProductInfoList:
+              execution:
+                isolation:
+                  thread:
+                    timeoutInMilliseconds: 1000
 
 

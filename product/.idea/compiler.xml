@@ -11,13 +11,8 @@
         <module name="product-client" />
         <module name="eureka" />
         <module name="product-common" />
-        <module name="order-client" />
-      </profile>
-      <profile name="Annotation profile for order" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="order-server" />
+        <module name="order-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

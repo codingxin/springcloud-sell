@@ -101,6 +101,22 @@
         <version>2.2.4.RELEASE</version>
     </dependency>
 
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-hystrix</artifactId>
+        <version>1.4.7.RELEASE</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard -->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+        <version>1.4.7.RELEASE</version>
+    </dependency>
+
+
+
 </dependencies>
     <build>
         <plugins>
