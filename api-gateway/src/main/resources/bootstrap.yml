@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id:  CONFIG
+      profile: dev
+
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders: #设置cookie
+#    product: /myProduct/**
+  ignored-patterns:
+    - /**/product/listForOrder #禁止访问的路由
+

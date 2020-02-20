@@ -5,6 +5,8 @@ import com.zhang.order.entity.OrderDetail;
 import com.zhang.order.entity.OrderMaster;
 import com.zhang.order.enums.OrderStatusEnum;
 import com.zhang.order.enums.PayStatusEnum;
+import com.zhang.order.enums.ResultEnum;
+import com.zhang.order.exception.OrderException;
 import com.zhang.order.repository.OrderDetailRepository;
 import com.zhang.order.repository.OrderMasterRepository;
 import com.zhang.order.service.OrderService;
@@ -16,34 +18,36 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.stream.Collectors;
 
 
 /**
  * @author codingzx
- * @description
- * 订单入库功能
+ * @description 订单入库功能
  * 客户端：
  * 1.参数校验
  * 2.查询购物车中所有商品 -  构造商品idList 调用服务端接口查询所有商品productInfoList
  * 3.计算价格
- *   循环购物车商品list—》ordertail  和 productInfoList -》productInfo，新建订单详情ordertail
- *   当id相等 计算价格 ，把productInfo复制到订单详情ordertail
- *   订单详情入库
+ * 循环购物车商品list—》ordertail  和 productInfoList -》productInfo，新建订单详情ordertail
+ * 当id相等 计算价格 ，把productInfo复制到订单详情ordertail
+ * 订单详情入库
  * 4.扣减库存
  * 调用服务端接口
  * 设置订单状态
  * 订单入库
- *
- *
- *
- *
- *
+ * <p>
+ * <p>
+ * <p>
+ * <p>
+ * <p>
  * 服务端：
  * 先遍历购物车对象，通过遍历找到每个商品
  * 判断商品是否存在
@@ -113,6 +117,33 @@ public class OrderServiceImpl implements OrderService {
         orderMaster.setOrderStatus(OrderStatusEnum.New.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
         orderMasterRepository.save(orderMaster);
+        return orderDTO;
+    }
+
+    @Override
+    @Transactional
+    public OrderDTO finish(String orderId) {
+        //1.查询订单状态
+        Optional<OrderMaster> orderMasterOptional = orderMasterRepository.findById(orderId);
+        if (!orderMasterOptional.isPresent()) {
+            throw new OrderException(ResultEnum.ORDER_NOT_EXIST);
+        }
+        //2.判断订单状态
+        OrderMaster orderMaster = orderMasterOptional.get();
+        if (orderMaster.getOrderStatus() != OrderStatusEnum.New.getCode()) {
+            throw new OrderException(ResultEnum.ORDER_STATUS_ERROR);
+        }
+        //3.修改订单状态为完结
+        orderMaster.setOrderStatus(OrderStatusEnum.FINISHED.getCode());
+        orderMasterRepository.save(orderMaster);
+
+        List<OrderDetail> orderDetailList = orderDetailRepository.findByOrderId(orderId);
+        if (CollectionUtils.isEmpty(orderDetailList)) {
+            throw new OrderException(ResultEnum.ORDER_DETAIL_NOT_EXIST);
+        }
+        OrderDTO orderDTO=new OrderDTO();
+        orderDTO.setOrderDetailList(orderDetailList);
+        BeanUtils.copyProperties(orderMaster,orderDTO);
         return orderDTO;
     }
 
