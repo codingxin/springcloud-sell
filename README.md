@@ -13,31 +13,31 @@
 SpringCloud Finchley
 三版本微服务实战
 ### 1.服务发现：Eureka
-Eureka Server
-Eureka Client
-Eureka高可用（两节点，三节点演示）
-服务发现原理剖析
+ Eureka Server
+ Eureka Client
+ Eureka高可用（两节点，三节点演示）
+ 服务发现原理剖析
 
 ### 2.服务通信
-通信机制剖析
-Feign
-Ribbon（带领分析源码，了解底层）
-RestTemplate
+ 通信机制剖析
+ Feign
+ Ribbon（带领分析源码，了解底层）
+ RestTemplate
 ### 3.分布式配置Spring Cloud Config
-Config Server
-Config Client
-Git和Refresh
-自动刷新
-SpringCloud Bus
+ Config Server
+ Config Client
+ Git和Refresh
+ 自动刷新
+ SpringCloud Bus
 ### 4.网关Zuul
-动态路由
-Zuul高可用
-异常网关统一处理
-验证与安全
+ 动态路由
+ Zuul高可用
+ 异常网关统一处理
+ 验证与安全
 ### 5.熔断Hystrix
-Hystrix Dashboard
-熔断机制
-目的和重要性
+ Hystrix Dashboard
+ 熔断机制
+ 目的和重要性
 
 
 
